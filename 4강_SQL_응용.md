@@ -32,9 +32,12 @@
              SET 속성명 = 데이터, ...
           [WHERE 조건]; //모든 행을 변경할 경우 WHERE문을 포함하지 않는다.
           
+
 4. DELETE
+          
           DELETE FROM 데이블 명
           [WHERE 조건];
+
 ## 3. DCL
 
 데이터베이스 관리자가 더이터 보안, 무결성 유지, 병행제어, 회복하기 위해 관리자{DBA)가 사용하는 제여용 언어이다.
@@ -63,3 +66,4 @@
              
              INSERT INTO TABLE VALUES(11);
              ROLLBACK;  //ROLLBACK 명령어 동작 시 COMMIT 이후 명령어는 원상 복구
+             
