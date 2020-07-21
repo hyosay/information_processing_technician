@@ -44,5 +44,22 @@
             GRANT 권한 ON 테이블명 TO 사용자명
  
  2. REVOKE(회수)
+ 
             REVOKE 권한 FROM 사용자
             REVOKE 권한 ON 'TABLE NAME' FROM 'USER'
+ 
+ 3. COMMIT(확정)
+ 
+ 
+ 4. ROLLBACK(회수) 
+ 
+ 5. SAVEPOINT(세이브 포인트 지정)
+ 
+ 
+ EX)
+ 
+             INSERT INTO TABLE VALUES(10);
+             COMMIT;   //COMMIT 명령어 동작 시 기존 명령어가 DB에 영구적으로 삽입
+             
+             INSERT INTO TABLE VALUES(11);
+             ROLLBACK;  //ROLLBACK 명령어 동작 시 COMMIT 이후 명령어는 원상 복구
